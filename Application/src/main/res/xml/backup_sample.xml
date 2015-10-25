@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<full-backup-content >
+
+    <!-- Shared preferences files can be excluded using the "sharedpref" domain. -->
+    <exclude domain="sharedpref" path="gcm_registrations"/>
+    <exclude domain="sharedpref" path="sensitive_user_credentials"/>
+    <exclude domain="sharedpref" path="device_specific_identifiers"/>
+
+    <!-- Databases are excluded by using the "database" domain. -->
+    <exclude domain="database" path="wow_secret_user_stuff_db.db"/>
+
+    <!-- Databases are included by using the "database" domain. -->
+    <include domain="database" path="user_settings_can_backup.db"/>
+
+    <!-- Files within  getFilesDir() method can be included / excluded by  "file" domain. -->
+    <include domain="file" path="its_my_file_and_i_save_if_i_want_to" />
+
+    <!-- Files within  getExternalFilesDir() method can be included / excluded by  "external" domain. -->
+    <include domain="external" path="arduino_board_config" />
+
+    <!-- Files within app’s root directory  can be included / excluded by  "root" domain.  -->
+    <include domain="root" path="radical_42" />
+
+</full-backup-content>

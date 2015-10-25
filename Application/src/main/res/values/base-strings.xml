@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string name="app_name">Automatic Backup</string>
+    <string name="intro_message">
+        <![CDATA[
+        
+            
+This sample demonstrates Automatic Backups in Android Marshmallow.
+
+
+        ]]>
+    </string>
+</resources>
